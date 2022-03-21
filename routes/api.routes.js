@@ -9,7 +9,6 @@ router.post('/fees', async(req, res) => {
 });
 
 router.post('/compute-transaction-fee',
-    payloadValidator,
     async(req, res) => {
         apiController.compute_transaction_fee(req, res);
     });
